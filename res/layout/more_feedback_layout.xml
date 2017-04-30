@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/feedback_include_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/include_top_bar" />
+
+    <TextView
+        android:id="@+id/feedback_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/feedback_content_edit"
+        android:layout_below="@+id/feedback_include_layout"
+        android:textColor="@color/dark_gray"
+        android:textSize="16sp"
+        android:text="您的意见、建议" />
+    
+    <EditText
+        android:id="@+id/feedback_content_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:layout_below="@id/feedback_textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/input_bg"
+        android:hint="尽情吐槽吧，任何意见和建议都会是我们成长的动力，我们下个版本见!"
+        android:ems="10"
+        android:gravity="top"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        android:textColor="@color/gray"
+        android:textCursorDrawable="@null"
+        android:textSize="16sp" />
+
+    <Button
+        android:layout_below="@id/feedback_content_edit"
+        android:id="@+id/feedback_send_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@color/green"
+        android:text="邮件发送"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

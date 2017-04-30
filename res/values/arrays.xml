@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="search_layout_hero_avatar_array">
+        <item>centaur</item>
+        <item>broodmother</item>
+        <item>bounty_hunter</item>
+        <item>bloodseeker</item>
+        <item>batrider</item>
+        <item>bane</item>
+        <item>abaddon</item>
+        <item>alchemist</item>
+        <item>antimage</item>
+        <item>ancient_apparition</item>
+        <item>axe</item>
+        <item>death_prophet</item>
+        <item>dark_seer</item>
+        <item>disruptor</item>
+        <item>dragon_knight</item>
+        <item>viper</item>
+        <item>drow_ranger</item>
+        <item>es</item>
+        <item>enchantress</item>
+        <item>elder_titan</item>
+        <item>stal_maiden</item>
+        <item>chaos_knight</item>
+        <item>witch_doctor</item>
+        <item>chen</item>
+        <item>bristleback</item>
+        <item>dazzle</item>
+        <item>furion</item>
+        <item>jakiro</item>
+        <item>invoker</item>
+        <item>juggernaut</item>
+        <item>keeper_of_the_light</item>
+        <item>kunkka</item>
+        <item>lich</item>
+        <item>lycan</item>
+        <item>magnataur</item>
+        <item>dedusa</item>
+        <item>meepo</item>
+        <item>naga_siren</item>
+        <item>nyx_assassin</item>
+        <item>ogre_magi</item>
+        <item>obsidian_destroyer</item>
+        <item>omniknight</item>
+        <item>phantom_lancer</item>
+        <item>phantom_assassin</item>
+        <item>puck</item>
+        <item>queenofpain</item>
+        <item>rattletrap</item>
+        <item>razor</item>
+        <item>riki</item>
+        <item>rubick</item>
+        <item>shadow_shaman</item>
+        <item>shredder</item>
+        <item>slark</item>
+        <item>sniper_hphover</item>
+        <item>storm_spirit</item>
+        <item>sven</item>
+        <item>tiny</item>
+        <item>tidehunter</item>
+        <item>templar_assassin</item>
+        <item>weaver</item>
+        <item>warlock</item>
+        <item>windrunner</item>
+        <item>wraith_king</item>
+    </string-array>
+
+</resources>

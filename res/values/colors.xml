@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="tab_bg">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#ABABAB</color>
+    <color name="light_gray">#EDEDED</color>
+    <color name="dark_gray">#747474</color>
+    <color name="dark_green">#4CBB92</color>
+    <color name="green">#84D018</color>
+    <color name="search_top_bg">#1BA2D1</color>
+    <color name="orance">#FD8839</color>
+    <color name="gold">#FADD64</color>
+    <color name="light_blue">#0FC4D9</color>
+    <color name="pink">#FF6779</color>
+    <color name="pink_red">#FF6678</color>
+    <color name="drak_yellow">#EBC86C</color>
+</resources>

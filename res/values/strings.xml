@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">大神盒子</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="str_eixt_tip">再按一次就退出了喔！</string>
+    
+    <string name="str_setting_update_newest_version">您已是最新版本</string>
+    <string name="str_setting_update_network_not_good">当前网络不好</string>
+    
+    <string name="dota2box_http">http://app.dota2box.com</string>
+    <string name="store_http">http://store.dota2.com.cn</string>
+    <string name="dotabuff_http">http://www.dotabuff.com</string>
+    <string name="steampowered_http">http://api.steampowered.com</string>
+    <string name="members_http">http://members.dota2.com.cn/dota/spotlight?jsonpCallback=data</string>
+
+</resources>

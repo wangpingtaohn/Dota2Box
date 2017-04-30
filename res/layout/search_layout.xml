@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/search_layout_back_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="取消"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/gray"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/search_layout_edit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/search_layout_clear_img"
+            android:layout_toRightOf="@id/search_layout_back_text"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:hint="输入昵称或ID搜索"
+            android:textColorHint="@color/gray"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/search_layout_clear_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/delete_pressed" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/search_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+    <ListView
+        android:id="@+id/search_user_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@drawable/content_spliteline"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+
+
+</LinearLayout>

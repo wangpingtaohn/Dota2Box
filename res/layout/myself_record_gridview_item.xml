@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hero_detail_basic_info_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:background="@drawable/item_background"
+    android:gravity="center" >
+
+    <ImageView
+        android:id="@+id/myself_record_gridview_item_image"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_centerVertical="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:alpha="0.5"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/myself_record_gridview_item_shuoming_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/myself_record_gridview_item_price_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/orance"
+        android:textSize="20sp" />
+
+    <ProgressBar
+        android:id="@+id/myself_rocord_gridview_item_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hero_detail_basic_info_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/item_background" >
+
+    <ImageView
+        android:id="@+id/more_games_list_item_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" />
+
+    <ProgressBar
+        android:id="@+id/more_games_list_item_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/more_games_list_item_image" >
+
+        <RelativeLayout
+            android:id="@+id/more_games_list_item_text_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/more_games_list_item_first_layotu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/more_games_list_item_image" >
+
+                <TextView
+                    android:id="@+id/more_games_list_item_tianti_game_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/more_games_list_item_quanzhenying_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/more_games_list_item_tianti_game_text"
+                    android:gravity="bottom"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/more_games_list_item_result_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:text="失败"
+                android:textColor="@color/gray"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/more_games_list_item_kill_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/more_games_list_item_result_text"
+                android:layout_marginRight="10dp"
+                android:text="7/9/8"
+                android:textColor="@color/pink_red"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_toLeftOf="@id/more_games_list_item_kill_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/more_games_list_item_first_layotu" >
+
+                <TextView
+                    android:id="@+id/more_games_list_item_tianti_times_count_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="41:33"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/more_games_list_item_times_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/more_games_list_item_tianti_times_count_text"
+                    android:maxEms="10"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:text="time"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/more_games_list_item_zb_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/more_games_list_item_text_layout"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <ImageView
+                android:id="@+id/more_games_list_item_zb_img1"
+                android:layout_width="40dp"
+                android:layout_height="36dp" />
+
+            <ImageView
+                android:id="@+id/more_games_list_item_zb_img2"
+                android:layout_width="40dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+
+            <ImageView
+                android:id="@+id/more_games_list_item_zb_img3"
+                android:layout_width="40dp"
+                android:layout_height="36dp" />
+
+            <ImageView
+                android:id="@+id/more_games_list_item_zb_img4"
+                android:layout_width="40dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+
+            <ImageView
+                android:id="@+id/more_games_list_item_zb_img5"
+                android:layout_width="40dp"
+                android:layout_height="36dp" />
+
+            <ImageView
+                android:id="@+id/more_games_list_item_zb_img6"
+                android:layout_width="40dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        layout="@layout/include_top_bar" />
+
+    <ScrollView
+        android:id="@+id/hero_detail_scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" >
+
+            <RelativeLayout
+                android:id="@+id/hero_detail_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/hero_detail_avatar"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_alignParentLeft="false"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/abaddon" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/hero_detail_avatar" >
+
+                    <TextView
+                        android:id="@+id/hero_detail_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="name"
+                        android:textColor="@color/black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/hero_detail_suoxie_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/hero_detail_name"
+                        android:text="AXE"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/hero_detail_skill_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/hero_detail_suoxie_text"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/hero_detail_basic_info_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hero_detail_layout"
+                android:background="@color/light_gray"
+                android:padding="5dp"
+                android:text="基础信息"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:id="@+id/hero_detail_basic_info_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hero_detail_basic_info_text"
+                android:layout_margin="5dp" >
+
+                <ImageView
+                    android:id="@+id/hero_detail_basic_info_first_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="false"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/liliang" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/hero_detail_basic_info_first_image" >
+
+                    <TextView
+                        android:id="@+id/hero_detail_basic_info_first_power"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="力量:25"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/hero_detail_basic_info_first_grow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/hero_detail_basic_info_first_power"
+                        android:text="成长:2.5"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/hero_detail_basic_info_first_attr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/hero_detail_basic_info_first_grow"
+                        android:text="属性 -- 每属性添加一点攻击力"
+                        android:textColor="@color/dark_green"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/hero_detail_line1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/hero_detail_basic_info_layout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/light_gray" />
+
+            <RelativeLayout
+                android:id="@+id/hero_detail_basic_info_second_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hero_detail_line1"
+                android:layout_margin="5dp" >
+
+                <ImageView
+                    android:id="@+id/hero_detail_basic_info_second_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="false"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/minjie" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/hero_detail_basic_info_second_image" >
+
+                    <TextView
+                        android:id="@+id/hero_detail_basic_info_second_agility"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="敏捷:25"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/hero_detail_basic_info_second_grow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/hero_detail_basic_info_second_agility"
+                        android:text="成长:2.5"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/hero_detail_basic_info_second_attr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/hero_detail_basic_info_second_grow"
+                        android:text="属性 -- 每属性添加一点攻击力"
+                        android:textColor="@color/dark_green"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/hero_detail_line2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/hero_detail_basic_info_second_layout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/light_gray" />
+
+            <RelativeLayout
+                android:id="@+id/hero_detail_basic_info_third_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hero_detail_line2"
+                android:layout_margin="5dp" >
+
+                <ImageView
+                    android:id="@+id/hero_detail_basic_info_third_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="false"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/zhili" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/hero_detail_basic_info_third_image" >
+
+                    <TextView
+                        android:id="@+id/hero_detail_basic_info_third_wit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="智力:25"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/hero_detail_basic_info_third_grow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/hero_detail_basic_info_third_wit"
+                        android:text="成长:2.5"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/hero_detail_basic_info_third_attr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/hero_detail_basic_info_third_grow"
+                        android:text="属性 -- 每属性添加一点攻击力"
+                        android:textColor="@color/dark_green"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/hero_detail_skill_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hero_detail_basic_info_third_layout"
+                android:background="@color/light_gray"
+                android:padding="5dp"
+                android:text="技能信息"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <com.wpt.frame.widget.MyListView
+                android:id="@+id/hero_detail_listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hero_detail_skill_layout" />
+
+            <TextView
+                android:id="@+id/hero_detail_hero_bg_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hero_detail_listView"
+                android:background="@color/light_gray"
+                android:padding="5dp"
+                android:text="英雄背景"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_below="@id/hero_detail_hero_bg_layout"
+                android:id="@+id/hero_detail_hero_bg_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/hero_detail_decorate_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hero_detail_hero_bg_text"
+                android:background="@color/light_gray"
+                android:padding="5dp"
+                android:text="装饰套装"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+            <com.wpt.frame.widget.MyGallery
+                android:layout_marginTop="10dp"
+                android:id="@+id/hero_detail_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:spacing= "10dp"
+                android:layout_below="@id/hero_detail_decorate_layout" />
+            <TextView
+                android:id="@+id/hero_detail_gallery_bottom"
+                android:text="test"
+                android:textSize="24sp"
+                android:visibility="invisible"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/hero_detail_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

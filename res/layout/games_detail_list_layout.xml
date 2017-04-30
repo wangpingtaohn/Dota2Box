@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/games_detail_list_layout_include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/include_top_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/games_detail_list_layout_hero_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="英雄"
+            android:textColor="@color/dark_green"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/games_detail_list_layout_hero_tab"
+            android:padding="10dp"
+            android:text="玩家"
+            android:textColor="@color/dark_green"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:layout_toRightOf="@+id/games_detail_list_layout_hero_tab"
+            android:padding="10dp"
+            android:text="等级"
+            android:textColor="@color/dark_green"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/games_detail_list_layout_money_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@+id/games_detail_list_layout_kda_tab"
+            android:padding="10dp"
+            android:text="金钱"
+            android:textColor="@color/dark_green"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/games_detail_list_layout_kda_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="KDA"
+            android:textColor="@color/dark_green"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/games_detail_list_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/games_detail_adview_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:visibility="gone" />
+
+        <ListView
+            android:layout_above="@id/games_detail_adview_layout"
+            android:id="@+id/games_detail_list_layout_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@drawable/content_spliteline"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/include_top_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/friend_detail_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/friend_detail_avatar_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="false"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/head_bg"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/friend_detail_avatar"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:layout_marginLeft="2dp"
+                        android:src="@drawable/avatar_default" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/friend_detail_avatar_layout" >
+
+                    <TextView
+                        android:id="@+id/friend_detail_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/friend_detail_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/friend_detail_name"
+                        android:textColor="@color/dark_green"
+                        android:textSize="14sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/friend_detail_game_total_layout"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/friend_detail_time"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/gray" >
+
+                        <TextView
+                            android:id="@+id/friend_detail_game_loss_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@color/gray" />
+
+                        <TextView
+                            android:id="@+id/friend_detail_game_win_text"
+                            android:layout_width="1dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@color/orance" />
+
+                        <TextView
+                            android:id="@+id/friend_detail_game_total_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/friend_detail_game_count_per"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/friend_detail_time"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/friend_detail_game_total_layout"
+                        android:textColor="@color/orance"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/friend_detail_level_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/grad" />
+
+                <ProgressBar
+                    android:id="@+id/friend_detail_progressbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/light_gray"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/friend_detail_frient_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/green"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="好友"
+                    android:textColor="@drawable/color_white_black_click"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/friend_detail_hero_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/light_blue"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="英雄"
+                    android:textColor="@drawable/color_white_black_click"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:text="英雄"
+                    android:textColor="@color/dark_green"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/friend_detail_result_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingRight="30dp"
+                    android:text="结果"
+                    android:textColor="@color/dark_green"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="40dp"
+                    android:layout_toRightOf="@+id/friend_detail_result_text"
+                    android:text="时间"
+                    android:textColor="@color/dark_green"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:text="杀/死/助"
+                    android:textColor="@color/dark_green"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" >
+
+                <com.wpt.frame.widget.MyListView
+                    android:id="@+id/friend_detail_listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white"
+                    android:horizontalSpacing="5dp"
+                    android:numColumns="2"
+                    android:verticalSpacing="5dp" />
+
+                <TextView
+                    android:id="@+id/friend_detail_more_game_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/friend_detail_listview"
+                    android:background="@color/pink_red"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="更多比赛"
+                    android:textColor="@drawable/color_white_black_click"
+                    android:textSize="18sp" />
+                <LinearLayout
+                    android:layout_below="@id/friend_detail_more_game_layout"
+                    android:id="@+id/friend_detail_adview_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

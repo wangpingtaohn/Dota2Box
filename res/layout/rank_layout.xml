@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/include_top_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="10dp" >
+
+        <LinearLayout
+            android:id="@+id/rank_top_tab1_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="中国"
+                android:textColor="@color/dark_gray"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/rank_top_tab1_view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_margin="2dp"
+                android:background="@color/green" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rank_top_tab2_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="东南亚"
+                android:textColor="@color/dark_gray"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/rank_top_tab2_view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_margin="2dp"
+                android:background="@color/green"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rank_top_tab3_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="欧洲"
+                android:textColor="@color/dark_gray"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/rank_top_tab3_view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_margin="2dp"
+                android:background="@color/green"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rank_top_tab4_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="美国"
+                android:textColor="@color/dark_gray"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/rank_top_tab4_view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_margin="2dp"
+                android:background="@color/green"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/rank_adview_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" />
+
+        <ListView
+            android:layout_above="@id/rank_adview_layout"
+            android:id="@+id/rank_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:scrollbars="none" >
+        </ListView>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hero_detail_basic_info_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/item_background" >
+
+    <ImageView
+        android:id="@+id/friend_detail_list_item_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="false"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp" />
+
+    <ProgressBar
+        android:id="@+id/friend_detail_list_item_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/friend_detail_list_item_image" >
+
+        <TextView
+            android:id="@+id/friend_detail_list_item_tianti_game_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/friend_detail_list_item_quanzhenying_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/friend_detail_list_item_tianti_game_text"
+            android:gravity="bottom"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/friend_detail_list_item_result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="失败"
+        android:paddingRight="30dp"
+        android:textColor="@color/gray"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/friend_detail_list_item_result_text" >
+
+        <TextView
+            android:id="@+id/friend_detail_list_item_tianti_times_count_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="41:33"
+            android:gravity="top"
+            android:layout_marginRight="40dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/friend_detail_list_item_times_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/friend_detail_list_item_tianti_times_count_text"
+            android:text="time"
+            android:gravity="bottom"
+            android:layout_marginRight="40dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/friend_detail_list_item_kill_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="7/9/8"
+            android:textColor="@color/pink_red"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

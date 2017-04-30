@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        layout="@layout/include_top_bar" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="10dp" >
+
+        <ImageView
+            android:id="@+id/sales_detail_avatar"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_alignParentLeft="false"
+            android:layout_marginLeft="10dp" />
+
+        <RelativeLayout
+            android:id="@+id/sales_user_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/sales_detail_avatar" >
+
+            <TextView
+                android:id="@+id/sales_detail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxEms="15"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/sales_detail_suoxie_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sales_detail_name"
+                android:text="稀有度:"
+                android:textColor="@color/dark_gray"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/sales_detail_xiyoudu_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sales_detail_name"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/sales_detail_suoxie_text"
+                android:textColor="@color/pink_red"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/sales_detail_skill_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sales_detail_suoxie_text"
+                android:text="商城价格:"
+                android:textColor="@color/dark_gray"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/sales_detail_shop_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sales_detail_suoxie_text"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/sales_detail_skill_text"
+                android:textColor="@color/drak_yellow"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/sales_detail_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sales_detail_skill_text"
+                android:text="提示:"
+                android:textColor="@color/dark_gray"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/sales_detail_tip_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sales_detail_skill_text"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/sales_detail_tip"
+                android:maxEms="15"
+                android:singleLine="true"
+                android:text="仅供展示游戏内购买"
+                android:textColor="@color/dark_gray"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/sales_detail_gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sales_user_layout"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            android:horizontalSpacing="5dp"
+            android:numColumns="3"
+            android:verticalSpacing="5dp" />
+        <ProgressBar
+            android:id="@+id/sales_detail_progressbar"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_background"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <TextView
+        android:id="@+id/rank_list_item_rank_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray"
+        android:singleLine="true"
+        android:textSize="18sp"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:layout_toRightOf="@id/rank_list_item_rank_text"
+        android:id="@+id/rank_list_item_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:singleLine="true"
+        android:maxEms="8"
+        android:layout_centerVertical="true"
+        android:textSize="16sp" />
+    
+    <ImageView
+        android:id="@+id/rank_list_item_country_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/rank_list_item_solo_text" />
+    
+    <TextView
+        android:singleLine="true"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/rank_list_item_next_text"
+        android:id="@+id/rank_list_item_solo_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@color/orance"
+        android:textSize="16sp" />
+    <TextView
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:id="@+id/rank_list_item_next_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray"
+        android:textSize="26sp"
+        android:text=">" />
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+# view res/layout/wallpaper_detail_layout.xml #generated:17
+# view res/layout/whatsnew_viewpager.xml #generated:6
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view AndroidManifest.xml #generated:15
+-keep class android.test.InstrumentationTestRunner { <init>(...); }
+
+# view AndroidManifest.xml #generated:32
+-keep class com.google.android.gms.ads.AdActivity { <init>(...); }
+
+# view res/layout/friend_layout.xml #generated:34
+# view res/layout/games_layout.xml #generated:30
+-keep class com.handmark.pulltorefresh.library.PullToRefreshListView { <init>(...); }
+
+# view AndroidManifest.xml #generated:46
+-keep class com.wpt.dota2box.ui.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:50
+-keep class com.wpt.dota2box.ui.MainTabActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:36
+-keep class com.wpt.dota2box.ui.WhatsnewActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:73
+-keep class com.wpt.dota2box.ui.goods.GoodsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:77
+-keep class com.wpt.dota2box.ui.goods.GoodsDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:69
+-keep class com.wpt.dota2box.ui.hero.HeroActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:89
+-keep class com.wpt.dota2box.ui.hero.HeroDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:117
+-keep class com.wpt.dota2box.ui.hero.HeroListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:81
+-keep class com.wpt.dota2box.ui.myself.MySelfActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:105
+-keep class com.wpt.dota2box.ui.myself.friend.FriendActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:109
+-keep class com.wpt.dota2box.ui.myself.friend.FriendDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:97
+-keep class com.wpt.dota2box.ui.myself.more.AboutActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:101
+-keep class com.wpt.dota2box.ui.myself.more.FeedbackActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:85
+-keep class com.wpt.dota2box.ui.myself.more.MoreActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:121
+-keep class com.wpt.dota2box.ui.myself.moreGames.GamesDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:113
+-keep class com.wpt.dota2box.ui.myself.moreGames.MoreGamesActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:54
+-keep class com.wpt.dota2box.ui.news.NewsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:59
+-keep class com.wpt.dota2box.ui.news.RankActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:133
+-keep class com.wpt.dota2box.ui.news.SalesDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:125
+-keep class com.wpt.dota2box.ui.news.wallpaper.WallpaperActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:129
+-keep class com.wpt.dota2box.ui.news.wallpaper.WallpaperDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:64
+-keep class com.wpt.dota2box.ui.search.SearchActivity { <init>(...); }
+
+# view res/layout/hero_detail_layout.xml #generated:304
+-keep class com.wpt.frame.widget.MyGallery { <init>(...); }
+
+# view res/layout/myself_layout.xml #generated:46
+-keep class com.wpt.frame.widget.MyGridView { <init>(...); }
+
+# view res/layout/friend_detail_layout.xml #generated:214
+# view res/layout/hero_detail_layout.xml #generated:267
+# view res/layout/news_layout.xml #generated:58
+-keep class com.wpt.frame.widget.MyListView { <init>(...); }
+
+# view AndroidManifest.xml #generated:93
+-keep class com.wpt.frame.widget.WebActivity { <init>(...); }
+
+# onClick res/layout/whats5.xml #generated:9
+-keepclassmembers class * { *** toMain(...); }
+
